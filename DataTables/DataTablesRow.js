@@ -103,7 +103,7 @@ var DataTablesTableRow = function (_TableRow) {
             _this.props.onCellClick(event, _this.props.rowNumber, columnIndex);
           }
           event.ctrlKey = true;
-          // _this.onRowClick(event);
+          _this.onRowClick(event);
         }, 300);
       }
     }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
