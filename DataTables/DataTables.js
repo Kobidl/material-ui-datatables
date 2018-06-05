@@ -176,13 +176,9 @@ var DataTables = function (_Component) {
           onCellClick = _this$props.onCellClick,
           selectable = _this$props.selectable;
 
-      if (onCellClick && !selectable) {
+      if (onCellClick) {
         var adjustedColumnIndex = _this.props.showCheckboxes ? columnIndex : columnIndex - 1;
-        onCellClick(rowIndex, adjustedColumnIndex,
-        // row data
-        _this.props.data[rowIndex],
-        // clicked column
-        _this.props.data[rowIndex][_this.props.columns[adjustedColumnIndex].key], event);
+        onCellClick(rowIndex, adjustedColumnIndex);
       }
     };
 
