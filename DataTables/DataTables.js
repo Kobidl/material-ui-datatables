@@ -469,7 +469,7 @@ var DataTables = function (_Component) {
               return _react2.default.createElement(
                 _DataTablesRow2.default,
                 {
-                  style: (0, _assign2.default)({}, styles.tableRow, tableRowStyle),
+                  style: (0, _assign2.default)({}, styles.tableRow, tableRowStyle,row.style),
                   key: index,
                   selected: isRowSelected(index, _this2.props.selectedRows)
                 },
